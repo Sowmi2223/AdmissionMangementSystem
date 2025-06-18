@@ -1,0 +1,26 @@
+<select id="age"onchange="getData()">
+<option value="lessthan18">less than 18</option>
+<option value="greaterthan18">greater than 18</option>
+</select>
+<div id="less18" style="display:none">
+<input type ="radio" name="juni" id="juni" value="10th">10th
+<input type ="radio" name="juni" id="juni" value="12th">12th
+</div>
+<div id="greater18" style="display:none">
+<input type ="radio" name="seni" id="seni" value="college">college
+<input type ="radio" name="seni" id="seni" value="working">working
+</div>
+<div id="greaterthan18"style="display:none;">
+</div>
+<script>
+    function getData(){
+        let val=document.getElementById("age").value;
+        if(val==lessthan18){
+            document.getElementById("less18").style.display="block";
+            document.getElementById("greater18").style.display="none";
+        }else{
+            document.getElementById("less18").style.display="none";
+            document.getElementById("greater18").style.display="block";
+        }
+    }
+</script>

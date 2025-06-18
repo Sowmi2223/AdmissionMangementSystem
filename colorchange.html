@@ -1,0 +1,20 @@
+<input type="email" name="email" placeholder="enter mail">
+<div id="msg">
+    <h3>emailshould contain</h3>
+    <div id="sym">@ and . should be</div>
+    <div id="upper">one uppercase</div>
+</div>
+<script>
+    let inputv=document.getElementById("email id");
+    inputv.onfocus=function(){
+        document.getElementById("msg").style.display="none";
+    }
+    inputv.onkey=function(){
+        inputval=inputv.value;
+        if(inputval.includes("@")&&inputval.includes(".")){
+            document.getElementById("sym").style.color="green";
+        }else{
+            document.getElementById("sym").style.color="red";
+        }
+    }
+    </script>

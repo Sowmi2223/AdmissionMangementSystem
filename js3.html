@@ -1,0 +1,14 @@
+<input type="text"onfocus="ontextfocus()"name="username"id="username"placeholder="enter username">
+<br/><br/>
+<input type="password"name="passw"id ="passw"placeholder="enter password">
+<p id="ops"></p>
+<script>
+function ontextfocus(){
+    document.getElementById("username").style.backgroundColor="pink";
+}
+let parse=document.getElementById("passw");
+passw.onkeyup=function(){
+    //passw.value=document.getElementById("passw").value
+    document.getElementById("ops").innerHTML=passw.value;
+}
+</script>
